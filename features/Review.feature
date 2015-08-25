@@ -1,3 +1,4 @@
+@selenium
 Feature: Review Testing
 Test the Vitals Reviews pages
 # Valid inputs for Given step are:

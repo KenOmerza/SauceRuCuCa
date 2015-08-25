@@ -1,3 +1,4 @@
+@selenium
 Feature: SERP Testing
   This Feature will test the various functions of the mast head and auto complete.
 

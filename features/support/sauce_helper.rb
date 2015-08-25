@@ -2,6 +2,7 @@
 # For options, check out http://saucelabs.com/docs/platforms
 require "sauce"
 require "sauce/capybara"
+require "capybara/rails"
 require "sauce/cucumber"
 
 Capybara.default_driver = :sauce
@@ -11,10 +12,10 @@ Capybara.javascript_driver = :sauce
 Sauce.config do |config|
   config[:start_local_application] = false
   config[:browsers] = [
-    #["Windows 8", "Chrome", "44"],
-    #["Windows 8", "Firefox", "35"],
+    ["Windows 8", "Chrome", "44"],
+    ["Windows 8", "Firefox", "35"],
     ["OS X 10.10", "Firefox", "35"]
   ]
   config[:start_tunnel] = true
-  config[:warn_on_skipped_integration] = false
+  config[:sauce_connect_4_executable] = './lib/assets/sc-4.3.11-osx/bin/sc'
 end

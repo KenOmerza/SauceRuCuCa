@@ -5,24 +5,26 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.2.1p85
 
 * System dependencies
+Due to change in Sauce Connect the tests need a manual download.
+If you are not running this on a mac, do the following
+1. Get the appropriate sauce connecter from:
+  https://docs.saucelabs.com/reference/sauce-connect/#service-managment
+2. Unzip it into "lib/assets"
+3. Update sauce_helper.rb to have correct path for "sauce_connect_4_executable"
+
 
 * Configuration
-
-* Database creation
-
-* Database initialization
+  - Run "Bundle Install" from the project root directory
 
 * How to run the test suite
-
+  - run "bundle exec rake sauce:features[features,4]"
+  
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
-* ...
 
-
-Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
