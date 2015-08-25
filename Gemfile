@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 group :test, :development do
   # These are the target gems of this tutorial
-  gem 'rspec'
+  gem 'rspec' 
   gem "selenium-webdriver"
   gem 'rspec-rails', '~> 3.3.0'
   gem 'sauce'
